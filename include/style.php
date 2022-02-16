@@ -353,12 +353,12 @@ echo "@font-face
 		{
 			font-size: 1.8em;
 			text-align: center;
-		}
+		}";
 
-	#mf-pre-footer .widget.vcard
+	/*#mf-pre-footer .widget.vcard
 	{
 		display: none;
-	}";
+	}*/
 
 	/*#mf-pre-footer .widget
 	{
