@@ -155,10 +155,22 @@ echo "@font-face
 					margin-top: -4em;
 				}*/
 
-	echo "#mf-slide-nav a:hover
+	echo "#wrapper #mf-slide-nav
 	{
-		text-decoration: underline;
+		background: none;
+		/*position: absolute;
+		top: 7.8em;*/
 	}
+
+		/*#mf-slide-nav .searchform
+		{
+			display: none;
+		}*/
+
+		#mf-slide-nav a:hover
+		{
+			text-decoration: underline;
+		}
 
 	#mf-pre-content.full_width > div, #mf-pre-content.full_width > div > .widget > div.has_image
 	{
@@ -303,7 +315,12 @@ echo "@font-face
 					.custom_list.custom_list_vara-politiker .image
 					{
 						border-radius: 50%;
-					}";
+					}
+					
+						.custom_list.custom_list_vara-politiker .image img
+						{
+							object-fit: cover;	
+						}";
 
 				/*.custom_list p
 				{
