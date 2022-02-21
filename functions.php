@@ -17,4 +17,6 @@ if(is_admin())
 else
 {
 	add_action('wp_head', array($obj_theme_child, 'wp_head'), 0);
+
+	add_filter('wp_lazy_loading_enabled', '__return_false');
 }
