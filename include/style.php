@@ -98,20 +98,20 @@ echo "@font-face
 	header.full_width > div
 	{
 		max-width: none;
-	}
+	}";
 
-		header #site_logo span
+		if(isset($obj_theme_core->options['sub_nav_direction']) && $obj_theme_core->options['sub_nav_direction'] == 'horizontal')
 		{
-			display: none;";
+			echo "header
+			{
+				margin-bottom: 2em;	
+			}";
+		}
 
-			/*font-family: Helvetica, sans-serif;
-			font-size: .6em;
-			font-weight: normal;
-			margin-top: .4em;
-			padding-top: .3em;
-			text-align: center;*/
-
-		echo "}
+		echo "header #site_logo span
+		{
+			display: none;
+		}
 
 		header #primary_nav
 		{
@@ -124,6 +124,17 @@ echo "@font-face
 				text-decoration: underline;
 			}
 
+				header .theme_nav.is_mobile_ready .sub-menu
+				{
+					padding-top: .2em;
+					padding-left: 5em;
+				}
+
+					header .theme_nav.is_mobile_ready .sub-menu:before
+					{
+						top: -1em;
+					}
+
 		header .searchform
 		{
 			margin: .6em 0 0 0;
@@ -131,41 +142,13 @@ echo "@font-face
 
 	#mf-after-header
 	{
-		display: none !important;";
-
-		/*position: relative;
-		z-index: 10;*/
-
-	echo "}";
-
-		/*#mf-after-header > div
-		{
-			margin-bottom: -65px !important;
-			padding: 0 2em;
-			text-align: center;
-		}
-
-			.is_mobile #mf-after-header > div
-			{
-				margin-bottom: -25px !important;
-			}
-
-				.is_tablet #mf-after-header .widget.buttons, .is_desktop #mf-after-header .widget.buttons
-				{
-					margin-top: -4em;
-				}*/
-
-	echo "#wrapper #mf-slide-nav
-	{
-		background: none;
-		/*position: absolute;
-		top: 7.8em;*/
+		display: none !important;
 	}
 
-		/*#mf-slide-nav .searchform
-		{
-			display: none;
-		}*/
+	#wrapper #mf-slide-nav
+	{
+		background: none;
+	}
 
 		#mf-slide-nav a:hover
 		{
@@ -175,15 +158,9 @@ echo "@font-face
 	#mf-pre-content.full_width > div, #mf-pre-content.full_width > div > .widget > div.has_image
 	{
 		max-width: none !important;
-	}";
+	}
 
-		/*.widget.hero.allow_bg_color
-		{
-			background: none;
-			color: #404040;
-		}*/
-
-		echo ".widget.hero .has_text
+		.widget.hero .has_text
 		{";
 
 			if(isset($obj_theme_core->options['website_max_width']) && $obj_theme_core->options['website_max_width'] > 0)
@@ -234,7 +211,7 @@ echo "@font-face
 					margin-top: 2em;
 					padding: 1.5rem 2rem;
 				}
-				
+
 					.widget.hero .align_ontop .image + .content_container .content a:hover > p
 					{
 						background-color: #f5b5d2;
@@ -297,14 +274,9 @@ echo "@font-face
 			.is_mobile .custom_list li
 			{
 				width: 99%;
-			}";
+			}
 
-				/*.custom_list h2
-				{
-					font-size: 1em;
-				}*/
-
-				echo ".custom_list .image
+				.custom_list .image
 				{
 					height: 0;
 					margin-bottom: .5em;
@@ -316,18 +288,13 @@ echo "@font-face
 					{
 						border-radius: 50%;
 					}
-					
+
 						.custom_list.custom_list_vara-politiker .image img
 						{
-							object-fit: cover;	
-						}";
+							object-fit: cover;
+						}
 
-				/*.custom_list p
-				{
-					font-size: .7em;
-				}*/
-
-			echo ".custom_list_one_col
+			.custom_list_one_col
 			{
 				list-style: none;
 			}
@@ -355,54 +322,6 @@ echo "@font-face
 			text-align: center;
 		}";
 
-	/*#mf-pre-footer .widget.vcard
-	{
-		display: none;
-	}*/
-
-	/*#mf-pre-footer .widget
-	{
-		text-align: center;
-	}*/
-
-		/*#mf-pre-footer .widget_black_studio_tinymce h3
-		{
-			background: #4d4d4d none repeat scroll 0 0;
-			color: #fff;
-			font-weight: 500;
-			letter-spacing: .13em;
-			padding: 4px 0;
-			text-align: center;
-			text-transform: uppercase;
-		}*/
-
-		/*#mf-pre-footer .vcard h3
-		{
-			background: #019cdb;
-			box-shadow: 0 1em 1em rgba(0, 0, 0, .2);
-			color: #fff;
-			font-weight: normal;
-			margin-bottom: -1.9em;
-			padding: 1em 0 2.2em;
-			max-width: 100%;
-		}
-
-		#mf-pre-footer .vcard .social a
-		{
-			font-size: 1.1em;
-		}
-
-			.vcard .social a + a
-			{
-				margin-left: 1em;
-			}
-
-			#mf-pre-footer .vcard .social.circle .fab
-			{
-				border-color: #fff;
-				border-width: .1em;
-			}*/
-
 	//echo ".widget.social_feed{}";
 
 		echo ".widget.social_feed h3
@@ -410,14 +329,9 @@ echo "@font-face
 			font-weight: normal;
 			padding: .5em 0 1em;
 			text-align: center;
-		}";
+		}
 
-	/*footer .widget.vcard h3
-	{
-		font-weight: 300;
-	}*/
-
-	echo "footer .vcard .social.circle .fa, footer .vcard .social.circle .fab
+	footer .vcard .social.circle .fa, footer .vcard .social.circle .fab
 	{
 		font-size: 1.5em;
 	}
@@ -449,14 +363,9 @@ echo "@font-face
 	footer .widget h3
 	{
 		font-weight: 900;
-	}";
+	}
 
-	/*footer .widget a
-	{
-		text-decoration: underline;
-	}*/
-
-	echo "footer .theme_logo
+	footer .theme_logo
 	{
 		padding-top: 5em;
 		text-align: center;
