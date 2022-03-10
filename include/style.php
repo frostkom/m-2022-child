@@ -104,7 +104,7 @@ echo "@font-face
 		{
 			echo "header
 			{
-				margin-bottom: 2em;	
+				margin-bottom: 2em;
 			}";
 		}
 
@@ -128,6 +128,7 @@ echo "@font-face
 				{
 					padding-top: .2em;
 					padding-left: 5em;
+					min-width: 12em;
 				}
 
 					header .theme_nav.is_mobile_ready .sub-menu:before
@@ -284,14 +285,17 @@ echo "@font-face
 					overflow: hidden;
 				}
 
-					.custom_list.custom_list_vara-politiker .image
+					.custom_list.custom_list_vara-politiker .image, .custom_list.custom_list_style_people .image
 					{
 						border-radius: 50%;
 					}
 
-						.custom_list.custom_list_vara-politiker .image img
+						.custom_list.custom_list_vara-politiker .image img, .custom_list.custom_list_style_people .image img
 						{
+							height: auto;
+							min-height: 100%;
 							object-fit: cover;
+							width: 100%;
 						}
 
 			.custom_list_one_col
