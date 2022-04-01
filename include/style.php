@@ -117,6 +117,7 @@ echo "@font-face
 		{
 			float: left;
 			font-weight: 300;
+			max-width: 82%;
 		}
 
 			header #primary_nav a:hover
@@ -140,6 +141,11 @@ echo "@font-face
 		{
 			margin: .6em 0 0 0;
 		}
+
+			.is_mobile header .searchform
+			{
+				margin: .3em 2em 0 0;
+			}
 
 	#mf-after-header
 	{
