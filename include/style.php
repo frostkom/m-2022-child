@@ -250,6 +250,24 @@ echo "@font-face
 			line-height: 1.3;
 		}
 
+		#mf-content article h1 > a:hover
+		{
+			color: #702283;
+			text-decoration: underline;
+		}
+
+		#mf-content article .meta > a
+		{
+			color: #702283;
+			font-style: normal;
+			text-decoration: underline;
+		}
+
+			article .meta > a:before
+			{
+				content: '#';
+			}
+
 		.custom_list
 		{
 			display: -webkit-box;
@@ -326,7 +344,7 @@ echo "@font-face
 						width: 65%;
 					}
 
-		.aside h3
+		.aside:not(.right) h3
 		{
 			font-size: 1.8em;
 			text-align: center;
