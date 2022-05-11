@@ -268,6 +268,30 @@ echo "@font-face
 				content: '#';
 			}
 
+		#mf-content ul li a:hover
+		{
+			color: #702283;
+			text-decoration: underline;
+		}
+
+		/* Typography and sizes on content */
+		/* ########################### */
+		#mf-content .has-small-font-size
+		{
+			font-size: 1.3em;
+		}
+
+		#mf-content .has-medium-font-size
+		{
+			font-size: 2em;
+		}
+
+		#mf-content .has-large-font-size
+		{
+			font-size: 3.6em;
+		}
+		/* ########################### */
+
 		.custom_list
 		{
 			display: -webkit-box;
