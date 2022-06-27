@@ -274,7 +274,7 @@ echo "@font-face
 			text-decoration: underline;
 		}
 
-		#wrapper .login_form #loginform
+		#wrapper .login_form #loginform, #wrapper .lost_password_form .mf_form
 		{
 			background: rgba(147,213,246,.4);
 			margin-bottom: 2em;
