@@ -113,7 +113,7 @@ echo "@font-face
 			display: none;
 		}
 
-		header #primary_nav
+		header .theme_menu, header > div > #primary_nav
 		{
 			float: left;
 			font-weight: 300;
