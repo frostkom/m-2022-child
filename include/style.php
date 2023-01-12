@@ -100,13 +100,13 @@ echo "@font-face
 		max-width: none;
 	}";
 
-		if(isset($obj_theme_core->options['sub_nav_direction']) && $obj_theme_core->options['sub_nav_direction'] == 'horizontal')
+		/*if(isset($obj_theme_core->options['sub_nav_direction']) && $obj_theme_core->options['sub_nav_direction'] == 'horizontal')
 		{
 			echo "header
 			{
 				margin-bottom: 2em;
 			}";
-		}
+		}*/
 
 		echo "header #site_logo span
 		{
@@ -128,7 +128,6 @@ echo "@font-face
 				header .theme_nav.is_mobile_ready .sub-menu
 				{
 					padding-top: .2em;
-					padding-left: 5em;
 					min-width: 12em;
 				}
 
