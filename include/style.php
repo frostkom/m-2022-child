@@ -171,8 +171,9 @@ echo "@font-face
 
 			if(isset($obj_theme_core->options['website_max_width']) && $obj_theme_core->options['website_max_width'] > 0)
 			{
-				echo "padding: 0;
-				max-width: ".$obj_theme_core->options['website_max_width']."px !important;";
+				//echo "padding: 0;";
+
+				echo "max-width: ".$obj_theme_core->options['website_max_width']."px !important;";
 			}
 
 		echo "}";
