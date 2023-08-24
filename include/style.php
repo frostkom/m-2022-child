@@ -163,6 +163,7 @@ echo "@font-face
 
 	#mf-pre-content.full_width > div, #mf-pre-content.full_width > div > .widget > div.has_image
 	{
+		padding: 0;
 		max-width: none !important;
 	}
 
