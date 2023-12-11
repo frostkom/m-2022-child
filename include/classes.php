@@ -58,7 +58,7 @@ class mf_theme_child
 			echo "<p>".sprintf(__("If you want to create a post directly from your e-mail client you can send a message to %s and it will be created as soon as the server has received the message. It is important that you send the message from your address %s and the message should only contain exactly the text that you want the post to contain. If you attach an image it will also be published with the post.", 'lang_m_child'), "<a href='mailto:".$postie_address."'>".$postie_address."</a>", "<a href='mailto:".$profile_email."'>".$profile_email."</a>")."</p>";
 		}
 
-		else if(IS_ADMIN)
+		else if(IS_ADMINISTRATOR)
 		{
 			echo "<p>".sprintf(__("There is no e-mail address set. Please go to the settings and enter the correct e-mail address and corresponding server settings.", 'lang_m_child'), "<a href='".admin_url("admin.php?page=postie-settings")."'>", "</a>")."</p>";
 		}
@@ -66,8 +66,6 @@ class mf_theme_child
 
 	function wp_head()
 	{
-		global $obj_theme_core;
-
 		$theme_include_url = get_stylesheet_directory_uri()."/";
 		$theme_version = get_theme_version();
 
