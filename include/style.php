@@ -281,6 +281,11 @@ echo "@font-face
 			margin-bottom: 2em;
 		}
 
+		#wrapper #lost_password_link
+		{
+			margin: -1.5em 0 2em 0;
+		}
+
 		/* Typography and sizes on content */
 		/* ########################### */
 		#mf-content .has-small-font-size
