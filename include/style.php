@@ -98,17 +98,9 @@ echo "@font-face
 	header.full_width > div
 	{
 		max-width: none;
-	}";
+	}
 
-		/*if(isset($obj_theme_core->options['sub_nav_direction']) && $obj_theme_core->options['sub_nav_direction'] == 'horizontal')
-		{
-			echo "header
-			{
-				margin-bottom: 2em;
-			}";
-		}*/
-
-		echo "header #site_logo span
+		header #site_logo span
 		{
 			display: none;
 		}
@@ -172,8 +164,6 @@ echo "@font-face
 
 			if(isset($obj_theme_core->options['website_max_width']) && $obj_theme_core->options['website_max_width'] > 0)
 			{
-				//echo "padding: 0;";
-
 				echo "max-width: ".$obj_theme_core->options['website_max_width']."px !important;";
 			}
 
@@ -384,11 +374,9 @@ echo "@font-face
 		{
 			font-size: 1.8em;
 			text-align: center;
-		}";
+		}
 
-	//echo ".widget.social_feed{}";
-
-		echo ".widget.social_feed h3
+		.widget.social_feed h3
 		{
 			font-weight: normal;
 			padding: .5em 0 1em;
