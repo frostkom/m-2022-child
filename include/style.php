@@ -247,14 +247,14 @@ echo "@font-face
 			text-decoration: underline;
 		}
 
-		#mf-content article .meta > a
+		#mf-content article > .meta > a
 		{
 			color: #702283;
 			font-style: normal;
 			text-decoration: underline;
 		}
 
-			article .meta > a:before
+			article > .meta > a:before
 			{
 				content: '#';
 			}
