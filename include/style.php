@@ -335,7 +335,7 @@ echo "@font-face
 					overflow: hidden;
 				}
 
-					.custom_list.custom_list_vara-politiker .image, .custom_list.custom_list_style_people .image
+					/*.custom_list.custom_list_vara-politiker .image, .custom_list.custom_list_style_people .image
 					{
 						border-radius: 50%;
 					}
@@ -346,7 +346,7 @@ echo "@font-face
 							min-height: 100%;
 							object-fit: cover;
 							width: 100%;
-						}
+						}*/
 
 			.custom_list_one_col
 			{
