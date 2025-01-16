@@ -296,21 +296,12 @@ echo "@font-face
 
 		.custom_list
 		{
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
 			display: flex;
-			-webkit-box-flex-wrap: wrap;
-			-webkit-flex-wrap: wrap;
-			-ms-flex-wrap: wrap;
 			flex-wrap: wrap;
 		}
 
 			.custom_list li
 			{
-				-webkit-box-flex: 0 1 auto;
-				-webkit-flex: 0 1 auto;
-				-ms-flex: 0 1 auto;
 				flex: 0 1 auto;
 				margin: 0 .5% 1em .5%;
 				text-align: center;
