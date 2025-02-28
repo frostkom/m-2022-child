@@ -265,9 +265,9 @@ echo "@font-face
 			text-decoration: underline;
 		}
 
-		#wrapper .login_form #loginform, #wrapper .lost_password_form .mf_form
+		.widget.login_form #loginform, .widget.lost_password_form .mf_form
 		{
-			background: rgba(147,213,246,.4);
+			background: rgba(147, 213, 246, .4) !important;
 			margin-bottom: 2em;
 		}
 
