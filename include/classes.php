@@ -22,11 +22,11 @@ class mf_theme_child
 
 	function admin_menu()
 	{
-		$setting_base_template_site = get_option('setting_base_template_site');
+		$setting_site_manager_template_site = get_option('setting_site_manager_template_site');
 
-		if($setting_base_template_site != '')
+		if($setting_site_manager_template_site != '')
 		{
-			$menu_link = str_replace("mall.", "", $setting_base_template_site)."/manual/";
+			$menu_link = str_replace("mall.", "", $setting_site_manager_template_site)."/manual/";
 			$menu_title = __("Manual", 'lang_m_child');
 			add_menu_page("", $menu_title, 'read', $menu_link, '', 'dashicons-sos', 100);
 		}
