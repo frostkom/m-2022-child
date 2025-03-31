@@ -4,22 +4,6 @@ class mf_theme_child
 {
 	function __construct(){}
 
-	function site_transient_update_plugins($value)
-	{
-		$arr_plugins = array('google-calendar-events/google-calendar-events.php');
-		$arr_plugins = array('wp-live-chat-support/wp-live-chat-support.php');
-
-		foreach($arr_plugins as $plugin)
-		{
-			if(isset($value->response[$plugin]))
-			{
-				unset($value->response[$plugin]);
-			}
-		}
-
-		return $value;
-	}
-
 	function admin_menu()
 	{
 		$setting_site_manager_site_comparison = get_option('setting_site_manager_site_comparison');
