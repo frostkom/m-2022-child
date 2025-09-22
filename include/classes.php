@@ -51,9 +51,8 @@ class mf_theme_child
 	function wp_head()
 	{
 		$theme_include_url = get_stylesheet_directory_uri()."/";
-		$theme_version = get_theme_version();
 
-		mf_enqueue_style('child_style', $theme_include_url."include/style.php", $theme_version);
+		mf_enqueue_style('child_style', $theme_include_url."include/style.php");
 
 		echo "<link rel='apple-touch-icon' sizes='180x180' href='".$theme_include_url."favicon/apple-touch-icon.png'>
 		<link rel='icon' type='image/png' sizes='32x32' href='".$theme_include_url."favicon/favicon-32x32.png'>
