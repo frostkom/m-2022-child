@@ -275,7 +275,7 @@ header.full_width > div
 	}
 
 	/* Typography and sizes on content */
-	/* ########################### */
+	/* ##################### */
 	#mf-content .has-small-font-size
 	{
 		font-size: 1.3em;
@@ -290,7 +290,7 @@ header.full_width > div
 	{
 		font-size: 3.6em;
 	}
-	/* ########################### */
+	/* ##################### */
 
 	.aside:not(.right) h3
 	{
