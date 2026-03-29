@@ -263,12 +263,6 @@ header.full_width > div
 		text-decoration: underline;
 	}
 
-	.widget.login_form #loginform, .widget.lost_password_form .mf_form
-	{
-		background: rgba(147, 213, 246, .4) !important;
-		margin-bottom: 2em;
-	}
-
 	#wrapper #lost_password_link
 	{
 		margin: -1.5em 0 2em 0;
